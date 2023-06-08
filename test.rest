@@ -1,0 +1,32 @@
+###
+# @name createKomentar
+POST http://localhost:3000/komentar
+Content-Type: application/json
+
+{
+  "id": "1",
+  "konten": "Ini adalah konten dari komentar",
+  "nama": "Nama Pengguna",
+  "idKomentar": "1"
+}
+
+###
+# @name getAllKomentar
+GET http://localhost:3000/komentar
+Content-Type: application/json
+
+###
+# @name updateKomentar
+PUT http://localhost:3000/komentar/64811e7d6def69df643d8831
+Content-Type: application/json
+
+{
+  "konten": "Ini adalah konten dari komentar yang diperbarui",
+  "nama": "Nama Pengguna Diperbarui",
+  "idKomentar": "1"
+}
+
+###
+# @name deleteKomentar
+DELETE http://localhost:3000/komentar/64811e7d6def69df643d8831
+Content-Type: application/json
